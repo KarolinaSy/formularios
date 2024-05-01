@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario4</title>
+</head>
+
+<body>
+
+    <form action="./recibirForm.php" method="get">
+
+
+
+        <h1>Reserva de Hotel</h1>
+
+        <label for="iname">Nombre completo:</label>
+        <input id="iname" type="text" name="name" required>
+
+
+        <br />
+
+        <label for="iemail">Email:</label>
+        <input id="iemail" type="email" name="email" required>
+
+        <br />
+
+        <label for="itlf">Número de teléfono:</label>
+        <input id="itlf" type="number" name="tlf" required>
+
+        <br />
+        <label for="idate">Fecha de llegada:</label>
+        <input id="idate" type="date" name="date" required>
+
+
+
+        <label for="idate">Fecha de salida:</label>
+        <input id="idate" type="date" name="date" required>
+
+        <br />
+
+
+        <h3>Tipo de habitación:</h3>
+        <input type="radio" value="individual" name="habitacion">Individual<br />
+        <input type="radio" value="compartido" name="habitacion">Compartido <br />
+
+        <br />
+
+        <h3>Número de huéspedes</h3>
+
+        <input type="number" name="altura" min="1" max="6" step="0" required><br />
+
+        <br />
+
+        <input type="checkbox" name="Casilla1" value="1"> Cama adicional <br />
+        
+        <br />
+
+
+        <input type="submit" value="Enviar">
+
+
+
+
+
+
+
+
+</body>
+
+</html>

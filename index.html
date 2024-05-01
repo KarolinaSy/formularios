@@ -1,56 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Formulario1</title>
-    <link rel="stylesheet" href="/css/estilo.css">
-
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel='stylesheet' href='/css/estilo.css'>
 </head>
 
 <body>
 
+    <body>
+        <section>
+            <div class="form-box">
+                <div class="form-value">
+                    <form>
+                        <h2>Registro</h2>
 
-    <form action="./recibirForm.php" method="get">
+                        <div class="inputbox"> <ion-icon name="person-outline"></ion-icon> <input type="text" required>
+                            <label>Usuario</label>
 
-        <h1>Registro de Usuario</h1>
+                        </div>
 
-        <input type="text" placeholder="Nombre de usuario" maxlength="8" name="usuario" required>
+                        <div class="inputbox"> <ion-icon name="mail-outline"></ion-icon> <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="inputbox"> <ion-icon name="lock-closed-outline"></ion-icon> <input type="password"
+                                required> <label>Contraseña</label>
+                        </div>
+                        <div class="inputbox"> <ion-icon name="lock-closed-outline"></ion-icon> <input type="password"
+                                required> <label>Confirmación Contraseña</label>
+                        </div>
 
-        <br />
+                        <div class="inputbox"><ion-icon name="location-outline"></ion-icon> <input type="text" required>
+                            <label>País</label>
+                        </div>
 
-        <input type="email" placeholder="Correo electrónico" name="usuario" required>
+                        <div class="inputbox"> <input type="date" required>
+                            <label>Fecha de nacimiento</label>
+                        </div>
 
-        <br />
+                        <div class="forget"> <label><input type="checkbox"><a href="#">Términos y Condiciones</a>
+                        </div>
+                        </label> <button>Registrarse</button>
 
-        <input type="password" placeholder="Contraseña" maxlength="8" name="clave" required>
+                </div>
+                </form>
+            </div>
 
-        <br />
-
-        <input type="password" placeholder="Validación contraseña" maxlength="8" name="clave" required>
-
-
-        <br />
-
-        Fecha de nacimiento<input type="date" name="fecha" required>
-<br/>
-
-<input type="text" placeholder="País de origen" name="País" required>
-
-<br/>
-
-<input type="checkbox" name="Casilla1" value="1"> <a href="#">Términos y Condiciones</a>
-
-<br/>
-
-<input type="button" value="Enviar">
-
-
-
-    </form>
-
-
+        </section>
+    </body>
 </body>
-
-</html>
